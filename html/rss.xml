@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Psyke.org</title>
+    <link>http://psyke.org/</link>
+    <link type="application/rss+xml" rel="self" href="http://ratatosk.net/rss.xml" />
+    <description>Self injury information and support</description>
+    <language>en-us</language>
+    <pubDate>Sun, 20 May 2012 21:01:21 +0200</pubDate>
+    <lastBuildDate>Sun, 20 May 2012 21:01:21 +0200</lastBuildDate>
+    
+  </channel>
+</rss>

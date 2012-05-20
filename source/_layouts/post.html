@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article>
+  <h1>{{ page.title }}</h1>
+  <p>
+    <em>By {{ page.author }}</em>
+  </p>
+  {{ content }}
+  <aside>
+    {% if page.previous.url %}
+      <a href="{{page.previous.url}}" title="Previous post: {{page.previous.title}}" class="prev" rel="prev" accesskey="p">&laquo; {{page.previous.title}}</a>
+    {% else %}
+      &nbsp;
+    {% endif %}
+    {% if page.next.url %}
+      <a href="{{page.next.url}}" title="Next post: {{page.next.title}}" class="next" rel="next" accesskey="n">{{page.next.title}} &raquo;</a>
+    {% else %}
+      &nbsp;
+    {% endif %}
+  </aside>
+</article>

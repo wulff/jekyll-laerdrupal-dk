@@ -1,0 +1,28 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Psyke.org</title>
+  <link href="http://psyke.org/"/>
+  <link type="application/atom+xml" rel="self" href="http://psyke.org/atom.xml" />
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://psyke.org/</id>
+  <author>
+    <name>Morten Wulff</name>
+    <email>wulff@ratatosk.net</email>
+  </author>
+  {% for post in site.posts limit:25 %}
+  <entry>
+    <id>http://psyke.org{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://psyke.org{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>{{ post.author }}</name>
+      <uri>http://psyke.org/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+</feed>

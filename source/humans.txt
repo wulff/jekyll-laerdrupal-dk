@@ -1,0 +1,14 @@
+---
+---
+
+TEAM
+
+Project lead: Morten Wulff
+Site: http://ratatosk.net/
+Twitter: @nidhug
+Location: Copenhagen, Denmark
+
+SITE
+
+Last update: {{ site.time | date_to_long_string }}
+Software: TextMate, Jekyll, Perl, Git

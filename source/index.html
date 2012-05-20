@@ -1,0 +1,22 @@
+---
+layout: default
+title: Self Injury Information and Support
+---
+
+<div id="home">
+  <h2>Latest content</h2>
+  <ul class="posts">
+    {% for post in site.posts limit:10 %}
+      {% unless post.category == 'section' %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> <em>by {{ post.author }}</em></li>
+      {% endunless %}
+    {% endfor %}
+  </ul>
+
+  <h2>Personal</h2>
+  <ul class="posts">
+    {% for post in site.categories.personal limit:10 %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> <em>by {{ post.author }}</em></li>
+    {% endfor %}
+  </ul>
+</div>
